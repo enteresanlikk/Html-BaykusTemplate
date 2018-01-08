@@ -1,0 +1,448 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>OWL</title>
+	<link rel="stylesheet" href="assets/css/style.min.css" />
+</head>
+<body>
+	
+	<div class="banner">
+		<div class="row">
+			<div class="title">
+				OWL
+			</div>
+			<div class="altTitle">
+				Meeting point for those who love to work at night.
+			</div>
+			<div class="image">
+				<img src="assets/img/layout/logo.png" alt="" class="loadEffect">
+			</div>
+			<div class="line"></div>
+		</div>
+		<div class="arrow" onclick="ScrollTop();">
+			<i class="fa fa-arrow-circle-o-down"></i>
+		</div>
+	</div>
+
+	<!-- Header -->
+	<header>
+		<ul class="mobile-menu-buttons">
+			<li onclick="MobileMenu();"><a href="javascript:;"><b class="fa fa-bars"></b></a></li>
+			<div class="logo">
+				<img src="assets/img/layout/logo.png" alt="" class="loadEffect" onclick="ScrollTop();">
+			</div>
+		</ul>
+		<nav>
+			<div class="closeMenu visible-xs" onclick="MobileMenu();">
+				<b class="fa fa-times"></b>
+			</div>
+			<ul class="menu-left">
+				<li><a href="#home" class="nav-link js-scroll-trigger active">Home</a></li>
+				<li><a href="#about" class="nav-link js-scroll-trigger">About</a></li>
+				<li><a href="#team" class="nav-link js-scroll-trigger">Team</a></li>
+				<li><a href="#contact" class="nav-link js-scroll-trigger">Contact</a></li>
+			</ul>
+
+			
+			<div class="logo">
+				<img src="assets/img/layout/logo.png" alt="" class="loadEffect" onclick="ScrollTop();">
+			</div>
+
+			<ul class="menu-right">
+				<li><a href="javascript:;" data-toggle="modal" data-target="#loginModal">Login</a></li>
+				<li><a href="javascript:;" data-toggle="modal" data-target="#registerModal">Register</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Header -->
+
+	<!--MODALS-->
+	<div id="loginModal" class="modal fade">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h2 class="modal-title text-uppercase text-center">Login</h2>
+				</div>
+				<form action="" method="get" id="loginForm">
+					<div class="modal-body">
+						<div class="row">
+							<input type="text" name="Username" placeholder="Username*" required data-msg-required="Required field!">
+						</div>
+						<div class="row">
+							<input type="password" name="Password" placeholder="Password*" required data-msg-required="Required field!">
+						</div>
+						<div class="row">
+							<b>* Required fields.</b>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<input type="submit" name="loginSend" value="Login" class="btn btn-danger btn-lg full-width">
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+	<div id="registerModal" class="modal fade">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h2 class="modal-title text-uppercase text-center">Register</h2>
+				</div>
+				<form action="" method="get" id="registerForm">
+					<div class="modal-body">
+						<div class="row">
+							<input type="text" name="NameSurname" placeholder="Name Surname*" required data-msg-required="Required field!">
+						</div>
+						<div class="row">
+							<input type="text" name="Username" placeholder="Username*" required data-msg-required="Required field!">
+						</div>
+						<div class="row">
+							<input type="email" name="Email" placeholder="Email*" required data-msg-required="Required field!" data-rule-email="true" data-msg-email="Please enter a valid email address." class="registerEmail">
+						</div>
+						<div class="row">
+							<input type="email" name="ConfirmEmail" placeholder="Confirm Email*" required data-msg-required="Required field!" data-rule-email="true" data-msg-email="Please enter a valid email address." data-rule-equalto=".registerEmail" data-msg-equalto="Email address and confirm email address should be the same.">
+						</div>
+						<div class="row">
+							<input type="password" name="Password" placeholder="Password*" required data-msg-required="Required field!" class="registerPassword">
+						</div>
+						<div class="row">
+							<input type="password" name="ConfirmPassword" placeholder="Confirm Password*" required data-msg-required="Required field!" data-rule-equalto=".registerPassword" data-msg-equalto="Password and confirm password should be the same.">
+						</div>
+						<div class="row">
+							<b>* Required fields.</b>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<input type="submit" name="registerSend" value="Register" class="btn btn-danger btn-lg full-width">
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+	<!--MODALS-->
+
+	<!-- Main -->
+	<main>
+		<section id="home" class="container p-t-10 section">
+			<h1 class="text-center text-uppercase p-t-10 color-black3 p-b-10">suggested posts</h1>
+			<div class="tabs">
+				<a href="#all" class="tab-item active">ALL</a>
+				<a href="#php" class="tab-item">PHP</a>
+				<a href="#c-sharp" class="tab-item">C#</a>
+				<a href="#html" class="tab-item">HTML</a>
+				<a href="#css" class="tab-item">CSS</a>
+				<a href="#js" class="tab-item">JS</a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 item-out loadEffect" data-id="php">
+				<div class="item">
+					<img src="assets/img/home/item.jpg" alt="">
+					<div class="bottom">
+						<h2>Item 1</h2>
+						<p>HSDG FJSDFJGfsgadf hdgs f gfhsdgfjsgdf gsdfgdshjfksdf</p>
+						<div class="share">
+							<b>Share: </b>
+							<a href="javascript:;" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="javascript:;" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="javascript:;" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							<a href="javascript:;" class="tumblr"><i class="fa fa-tumblr"></i></a>
+						</div>
+						<div class="tag-title">PHP</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 item-out loadEffect" data-id="css">
+				<div class="item">
+					<img src="assets/img/home/item.jpg" alt="">
+					<div class="bottom">
+						<h2>Item 1</h2>
+						<p>HSDG FJSDFJGfsgadf hdgs f gfhsdgfjsgdf gsdfgdshjfksdf</p>
+						<div class="share">
+							<b>Share: </b>
+							<a href="javascript:;" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="javascript:;" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="javascript:;" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							<a href="javascript:;" class="tumblr"><i class="fa fa-tumblr"></i></a>
+						</div>
+						<div class="tag-title">CSS</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 item-out loadEffect" data-id="php">
+				<div class="item">
+					<img src="assets/img/home/item.jpg" alt="">
+					<div class="bottom">
+						<h2>Item 1</h2>
+						<p>HSDG FJSDFJGfsgadf hdgs f gfhsdgfjsgdf gsdfgdshjfksdf</p>
+						<div class="share">
+							<b>Share: </b>
+							<a href="javascript:;" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="javascript:;" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="javascript:;" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							<a href="javascript:;" class="tumblr"><i class="fa fa-tumblr"></i></a>
+						</div>
+						<div class="tag-title">PHP</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 item-out loadEffect" data-id="css">
+				<div class="item">
+					<img src="assets/img/home/item.jpg" alt="">
+					<div class="bottom">
+						<h2>Item 1</h2>
+						<p>HSDG FJSDFJGfsgadf hdgs f gfhsdgfjsgdf gsdfgdshjfksdf</p>
+						<div class="share">
+							<b>Share: </b>
+							<a href="javascript:;" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="javascript:;" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="javascript:;" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							<a href="javascript:;" class="tumblr"><i class="fa fa-tumblr"></i></a>
+						</div>
+						<div class="tag-title">CSS</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 item-out loadEffect" data-id="html">
+				<div class="item">
+					<img src="assets/img/home/item.jpg" alt="">
+					<div class="bottom">
+						<h2>Item 1</h2>
+						<p>HSDG FJSDFJGfsgadf hdgs f gfhsdgfjsgdf gsdfgdshjfksdf</p>
+						<div class="share">
+							<b>Share: </b>
+							<a href="javascript:;" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="javascript:;" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="javascript:;" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							<a href="javascript:;" class="tumblr"><i class="fa fa-tumblr"></i></a>
+						</div>
+						<div class="tag-title">HTML</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 item-out loadEffect" data-id="js">
+				<div class="item">
+					<img src="assets/img/home/item.jpg" alt="">
+					<div class="bottom">
+						<h2>Item 1</h2>
+						<p>HSDG FJSDFJGfsgadf hdgs f gfhsdgfjsgdf gsdfgdshjfksdf</p>
+						<div class="share">
+							<b>Share: </b>
+							<a href="javascript:;" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="javascript:;" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="javascript:;" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							<a href="javascript:;" class="tumblr"><i class="fa fa-tumblr"></i></a>
+						</div>
+						<div class="tag-title">JS</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 item-out loadEffect" data-id="js">
+				<div class="item">
+					<img src="assets/img/home/item.jpg" alt="">
+					<div class="bottom">
+						<h2>Item 1</h2>
+						<p>HSDG FJSDFJGfsgadf hdgs f gfhsdgfjsgdf gsdfgdshjfksdf</p>
+						<div class="share">
+							<b>Share: </b>
+							<a href="javascript:;" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="javascript:;" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="javascript:;" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							<a href="javascript:;" class="tumblr"><i class="fa fa-tumblr"></i></a>
+						</div>
+						<div class="tag-title">JS</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 item-out loadEffect" data-id="c-sharp">
+				<div class="item">
+					<img src="assets/img/home/item.jpg" alt="">
+					<div class="bottom">
+						<h2>Item 1</h2>
+						<p>HSDG FJSDFJGfsgadf hdgs f gfhsdgfjsgdf gsdfgdshjfksdf</p>
+						<div class="share">
+							<b>Share: </b>
+							<a href="javascript:;" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="javascript:;" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="javascript:;" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							<a href="javascript:;" class="tumblr"><i class="fa fa-tumblr"></i></a>
+						</div>
+						<div class="tag-title">C#</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 item-out loadEffect" data-id="css">
+				<div class="item">
+					<img src="assets/img/home/item.jpg" alt="">
+					<div class="bottom">
+						<h2>Item 1</h2>
+						<p>HSDG FJSDFJGfsgadf hdgs f gfhsdgfjsgdf gsdfgdshjfksdf</p>
+						<div class="share">
+							<b>Share: </b>
+							<a href="javascript:;" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="javascript:;" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="javascript:;" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							<a href="javascript:;" class="tumblr"><i class="fa fa-tumblr"></i></a>
+						</div>
+						<div class="tag-title">CSS</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="about" class="aboutSec  loadEffect section">
+			<div class="left">
+				<img src="assets/img/about/about-image.jpg" alt="">
+			</div>
+			<div class="right">
+				<h2 class="text-uppercase">about the owls?</h2>
+				<p>
+					Nightlife is the time for hiding and sleeping for many creatures, while for some it is time for hunting. However, there is a big disadvantage in night fishing; dark. For this reason, it is a must for a night hunter. The owls, who are the best of night hunters, are the assets that God has created with these special equipment.
+				</p>
+				<br>
+				<p>
+					The hearing system of owls is quite superior to many other living things. His ears are found behind his eyes, near his head. The threshold of a bird's sensation is not different from that of a human. But since owls are more sensitive to voices at certain frequencies, they hear even the slightest voices of leaves or the prey under the bushes.
+				</p>
+			</div>
+		</section>
+		<section id="team" class="container teamSec loadEffect section">
+			<h2 class="text-uppercase text-center p-t-10 p-b-10"><b>TEAM</b></h2>
+			<div class="col-lg-3 col-md-3 col-sm-6 loadEffect person-out">
+				<div class="person">
+					<img src="assets/img/team/person1.png" alt="">
+					<div class="bottom">
+						<h3>Person name</h3>
+						<p>person description sdg hsf ksdjgf jgsdfsdf.</p>
+						<div class="social-media">
+							<b>Share: </b>
+							<a href="javascript:;" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="javascript:;" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="javascript:;" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							<a href="javascript:;" class="tumblr"><i class="fa fa-tumblr"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-6 loadEffect person-out">
+				<div class="person">
+					<img src="assets/img/team/person2.png" alt="">
+					<div class="bottom">
+						<h3>Person name</h3>
+						<p>person description sdg hsf ksdjgf jgsdfsdf.</p>
+						<div class="social-media">
+							<b>Share: </b>
+							<a href="javascript:;" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="javascript:;" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="javascript:;" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							<a href="javascript:;" class="tumblr"><i class="fa fa-tumblr"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-6 loadEffect person-out">
+				<div class="person">
+					<img src="assets/img/team/person3.png" alt="">
+					<div class="bottom">
+						<h3>Person name</h3>
+						<p>person description sdg hsf ksdjgf jgsdfsdf.</p>
+						<div class="social-media">
+							<b>Share: </b>
+							<a href="javascript:;" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="javascript:;" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="javascript:;" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							<a href="javascript:;" class="tumblr"><i class="fa fa-tumblr"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-6 loadEffect person-out">
+				<div class="person">
+					<img src="assets/img/team/person4.png" alt="">
+					<div class="bottom">
+						<h3>Person name</h3>
+						<p>person description sdg hsf ksdjgf jgsdfsdf.</p>
+						<div class="social-media">
+							<b>Share: </b>
+							<a href="javascript:;" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="javascript:;" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="javascript:;" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							<a href="javascript:;" class="tumblr"><i class="fa fa-tumblr"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section id="contact" class="container contactSec loadEffect section">
+			<h2 class="text-uppercase text-center p-t-10 p-b-10"><b>Contact</b></h2>
+			<div class="flex">
+				<div class="left">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752.4940457255502!2d28.973830829197865!3d41.02577701045497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAxJzMyLjgiTiAyOMKwNTgnMjcuOCJF!5e0!3m2!1str!2str!4v1513537762362" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="right">
+					<form action="" method="get" id="contact-form">
+						<div class=" flex">
+							<div class="form-left">
+								<input type="text" name="Name" placeholder="Name*" required data-msg-required="Required field!">
+							</div>
+							<div class="form-right">
+								<input type="text" name="Surname" placeholder="Surname*" required data-msg-required="Required field!">
+							</div>
+						</div>
+						<div class="">
+							<input type="email" name="Mail" placeholder="Mail*" required data-msg-required="Required field!" data-rule-email="true" data-msg-email="Please enter a valid email address.">
+						</div>
+						<div class="">
+							<textarea name="Comment" placeholder="Comment*" required data-msg-required="Required field!"></textarea>
+						</div>
+						<div class="">
+							<span>* Required Field</span>
+						</div>
+						<div class="">
+							<input type="submit" name="send" value="Send">
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Main -->
+
+	<div class="res-state"></div>
+
+	<div class="scroll-top" onclick="ScrollTop();">
+		<i class="fa fa-arrow-up"></i>
+	</div>
+
+	<!-- Footer -->
+	<footer class="loadEffect">
+		<section class="container">
+			<div class=" logo">
+				<img src="assets/img/layout/logo.png" alt="" onclick="ScrollTop();">
+			</div>
+			<div class="copyright text-center">
+				<p class="text-uppercase">© 2017 BILAL DEMIR ALL RIGHTS RESERVED</p>
+			</div>
+		</section>
+	</footer>
+	<!-- Footer -->
+
+	<script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/scrolling-nav/scrolling-nav.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/pages/contact.js"></script>
+</body>
+</html>

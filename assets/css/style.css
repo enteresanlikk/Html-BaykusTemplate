@@ -1,0 +1,125 @@
+@import url(plugin/FontAwesome/font-awesome.min.css);
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif; }
+
+* {
+  box-sizing: border-box;
+  word-wrap: break-word; }
+
+header {
+  background: #fff;
+  height: 70px;
+  line-height: 70px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 0px -8px 100px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -8px 100px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -8px 100px 1px rgba(0, 0, 0, 0.75); }
+  header .mobile-menu-buttons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none; }
+    header .mobile-menu-buttons li {
+      float: left;
+      display: table; }
+      header .mobile-menu-buttons li a b {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        padding: 0 20px;
+        text-decoration: none;
+        color: #333;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2em; }
+    header .mobile-menu-buttons .logo {
+      height: 60px;
+      width: auto;
+      padding: 5px 10px;
+      float: right; }
+      header .mobile-menu-buttons .logo img {
+        height: 50px; }
+  header nav {
+    display: flex; }
+    header nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      header nav ul.menu-left {
+        float: left; }
+        header nav ul.menu-left li:first-child a {
+          margin-left: 50px; }
+      header nav ul.menu-right {
+        float: right; }
+        header nav ul.menu-right li:nth-last-child(1) a {
+          margin-right: 50px; }
+      header nav ul li {
+        float: left;
+        display: table;
+        transition: background 300ms; }
+        header nav ul li a {
+          display: inline-block;
+          vertical-align: middle;
+          line-height: normal;
+          padding: 0 20px;
+          text-decoration: none;
+          color: #333;
+          text-transform: uppercase;
+          font-weight: bold;
+          height: 72px;
+          line-height: 70px; }
+          header nav ul li a:hover {
+            background: #2F4858;
+            color: #fff; }
+    header nav .logo {
+      width: 100%;
+      height: 70px;
+      flex: 1;
+      text-align: center;
+      margin: 0 auto;
+      padding: 5px; }
+      header nav .logo img {
+        height: 100%; }
+
+@media (max-width: 767px) {
+  header {
+    line-height: 60px;
+    height: 60px; }
+    header .mobile-menu-buttons {
+      display: inherit; }
+    header nav {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background: rgba(50, 50, 50, 0.6);
+      flex-direction: column;
+      overflow-y: auto; }
+      header nav .logo {
+        display: none; }
+      header nav ul {
+        width: 80%;
+        height: 100%;
+        background: #fff; }
+        header nav ul.menu-left {
+          float: left; }
+          header nav ul.menu-left li:first-child a {
+            margin-left: 0; }
+        header nav ul.menu-right {
+          float: left;
+          border-top: 1px solid #222; }
+          header nav ul.menu-right li:nth-last-child(1) a {
+            margin-right: 0; }
+        header nav ul li {
+          float: none !important;
+          width: 100%; }
+          header nav ul li a {
+            padding: 0 20px;
+            width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
